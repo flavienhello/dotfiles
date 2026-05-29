@@ -70,3 +70,29 @@ export EDITOR=code
 
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+eval $(/opt/homebrew/bin/brew shellenv)
+# GEM_HOME removed 2026-05-29 — was forcing gems to flat ~/.gem path that
+# fought rbenv's per-version gem dirs. Let rbenv own gem location.
+rbenv global 3.3.11
+ruby -v
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/macbookairflav/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/macbookairflav/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/macbookairflav/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/macbookairflav/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Added by Windsurf
+export PATH="/Users/macbookairflav/.codeium/windsurf/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/macbookairflav/.antigravity/antigravity/bin:$PATH"
+
+# Added by Flavien for Gbrain config
+export GBRAIN_DISABLE_DIRECT_POOL=1
+export PATH="$HOME/.local/bin:$PATH"
