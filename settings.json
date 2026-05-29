@@ -56,7 +56,6 @@
         "**/tmp/**": true,
         "**/vendor/**": true
     },
-    "git.enabled": false,
     "notebook.diff.ignoreMetadata": true,
     "notebook.lineNumbers": "on",
     "notebook.markup.fontSize": 13,
@@ -83,5 +82,37 @@
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.panel.defaultLocation": "right",
+    "workbench.editor.wrapTabs": true,
+    "editor.inlineSuggest.enabled": true,
+    "window.zoomLevel": -1,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.accessibilitySupport": "off",
+    "git.autofetch": true,
+    "conventionalCommits.lineBreak": "\\n",
+    "githubIssues.queries": [
+      {
+        "label": "Mes problèmes",
+        "query": "default"
+      },
+      {
+        "label": "Problèmes créés",
+        "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+      },
+      {
+        "label": "Problèmes récents",
+        "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+      }
+    ],
+    "githubPullRequests.pullBranch": "never",
+    "window.commandCenter": true,
+    "git.enableSmartCommit": true,
+    "remote.defaultExtensionsIfInstalledLocally": [
+      "GitHub.copilot",
+      "GitHub.copilot-chat",
+      "GitHub.vscode-pull-request-github"
+    ],
+    "makefile.configureOnOpen": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "claudeCode.selectedModel": "default",
+    "claudeCode.preferredLocation": "panel",
 }
